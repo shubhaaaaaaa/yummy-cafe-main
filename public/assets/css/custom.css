@@ -1,0 +1,299 @@
+:root {
+    --color-primary: #FF9800;
+    --color-danger-color: red;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url('../img/pattern.png');
+  background-color: rgba(255, 255, 255, 0.95); /* Adjust the opacity here */
+  background-blend-mode: overlay; /* Helps blend the background image and color */
+  background-repeat: repeat; /* Allow the image to repeat */
+}
+
+/* Menu add me to list button  */
+
+.add-to-list-btn {
+    background-color: rgba(255, 152, 0, 1);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-list-btn:hover{
+    background-color: #333333;
+}
+
+/* Display in table  */
+
+
+.btn-outline-primary {
+
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+
+}
+    
+    .btn-primary{
+
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+
+  }
+  .btn-primary:active,
+  .btn-primary:focus,
+  .btn-primary:hover{
+
+        background-color: white!important;
+        border-color: var(--color-primary)!important;
+        color: var(--color-primary) !important;
+
+    }
+    
+    .btn-outline-primary:hover, 
+    .btn-outline-primary:active, 
+    .btn-outline-primary:focus{
+        
+        border-color: var(--color-primary)!important;
+       background-color: var(--color-primary)!important;
+
+   }
+
+   .table-custom {
+
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .table-custom th,
+  .table-custom td {
+
+    padding: 10px;
+    text-align: left;
+
+  }
+  
+  .table-custom thead {
+
+    background-color: #f2f2f2;
+  }
+
+  
+  /* Add hover effect and transition */
+  .table-custom tbody tr:hover {
+
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+
+  }
+
+/* image in menu  */
+
+.menu-item img{
+  height: 200px;
+  width: 350px;
+}
+
+/* color in the active nav bar  */
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active-category,
+.nav-link.active-category:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.sb-sidenav-menu-nested .sidenav-link{
+  padding: 1rem;
+}
+
+.dropdown-menu a, .dropdown-menu p, .dropdown-menu form {
+padding-left: 1rem;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item:hover {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: black;
+}
+
+.dropdown-menu form button{
+  border: 0;
+  background-color: rgba(255, 152, 0, 0.1);
+  color: #FF9800;
+}
+.dropdown-menu form button:hover{
+  color: black;
+}
+
+/* Order Confirmation Page  */
+
+.order-confirm-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+}
+
+.order-confirm-page h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.order-confirm-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.order-confirm-page div {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.order-confirm-page strong {
+  font-weight: bold;
+}
+
+.order-confirm-page form {
+  margin-top: 20px;
+}
+
+.order-confirm-page .button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.order-confirm-page .button-row span{
+font-size: larger;
+}
+
+
+.order-confirm-page .col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.khalti-btn{
+  background-color: #5e20b0;
+  font-size: 1rem;
+}
+
+.order-confirm-page span{
+  color: #FF9800;
+}
+
+
+.order-confirm-page .order-info{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* charts */
+
+.chart-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 70px; 
+  margin-top: 20px; 
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chart-wrapper h1 {
+  padding-bottom: 1rem;
+}
+
+#orderStatusChart {
+  width: 350px!important;
+  height: auto!important;
+}
+
+#monthlySalesChart{
+  width: 600px!important;
+  height: 320px!important;
+}
+
+/* profile detail page  */
+
+.user-card {
+  width: auto;
+  border: 1px solid #FF9800;
+  border-radius: 20px;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.user-card p {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  margin: 1rem 0;
+}
+
+
+.user-card .label {
+  font-weight: bold;
+  min-width: 100px; 
+}
+
+/* orders table  */
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-table th {
+  background-color: rgba(255, 152, 0, 0.1);
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #FFC266;
+}
+
+.order-table tr {
+  background-color: #ffffff;
+}
+
+.order-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.order-table td {
+  padding: 10px;
+  border: 1px solid #FFC266;
+}
+
+.order-table select {
+  width: 130px;
+  padding: 5px;
+}
+
+.order-table .status-form {
+  margin: 0;
+}
+
+/* ongoing orders table  */
+ 
